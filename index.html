@@ -91,14 +91,33 @@
   </div>
 
   <script>
-    function yesClicked() {
-      document.body.innerHTML = `
-        <div style="text-align:center;color:white;">
-          <h1>YAYYY!!! 💕🥹</h1>
-          <p>You just made me the happiest person ever 💖</p>
-          <p>Happy Valentine’s, my love ❤️</p>
-        </div>
-      `;
+   function yesClicked() {
+  document.body.style.background = "url('us.jpg') no-repeat center center fixed";
+  document.body.style.backgroundSize = "cover";
+
+  document.body.innerHTML = `
+    <div style="
+      height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      background: rgba(0,0,0,0.5);
+      color:white;
+      text-align:center;
+      padding:20px;
+    ">
+      <h1 style="font-size:2.5rem;">YAYYY!!! 💕🥹</h1>
+      <p style="font-size:1.3rem;">
+        You just made me the happiest person ever 💖
+      </p>
+      <p style="font-size:1.2rem;">
+        Happy Valentine’s Day, my love ❤️
+      </p>
+    </div>
+  `;
+}
+
     }
 
     function noClicked() {
@@ -107,5 +126,6 @@
   </script>
 </body>
 </html>
+
 
 
